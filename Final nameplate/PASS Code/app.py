@@ -416,7 +416,7 @@ with tab1:
         with pd.ExcelWriter(buf, engine="openpyxl") as w:
             df_long.to_excel(w, index=False)
         buf.seek(0)
-        st.download_button("ดาวน์โหลด long", buf, "extracted_long.xlsx")
+        st.download_button("ดาวน์โหลด", buf, "extracted_long.xlsx")
 
 # ------ โหมด 2: ประมวลผลจาก validated ------
 # ------ โหมด 2: ประมวลผลจาก validated ------
