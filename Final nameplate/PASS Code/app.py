@@ -160,7 +160,7 @@ def generate_prompt_from_excel(excel_file):
 # 3)  Gemini API call                                                         #
 # --------------------------------------------------------------------------- #
 def extract_data_from_image(api_key: str, img_b64: str, mime: str, prompt: str) -> str:
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-04-17:generateContent?key={api_key}"
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key={api_key}"
     payload = {
         "contents": [{
             "parts": [
